@@ -13,9 +13,73 @@ To write a Python program using **NumPy** that finds the indices where elements 
 5. **Print Indices**: Print the indices where the condition holds true.
 
 ## 🧾 Program
-
-Add code here
+import numpy as np
+N,M,P=map(int,input().split())
+arr1=np.array([list(map(int,input().split())) for _ in range(N)])
+arr2=np.array([list(map(int,input().split())) for _ in range(M)])
+result=np.concatenate((arr1,arr2),axis=0)
+print(result)
 
 ## Output
+	Input	Expected	Got	
+    4 3 2
+    1 2
+    1 2
+    1 2
+    1 2
+    3 4
+    3 4
+    3 4
+[[1 2]
+ [1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]
+ [3 4]]
+[[1 2]
+ [1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]
+ [3 4]]
+    3 3 2
+    1 2
+    1 2
+    1 2
+    3 4
+    3 4
+    3 4
+[[1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]
+ [3 4]]
+[[1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]
+ [3 4]]
+    3 2 2
+    1 2
+    1 2
+    1 2
+    3 4
+    3 4
+[[1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]]
+[[1 2]
+ [1 2]
+ [1 2]
+ [3 4]
+ [3 4]]
+
 
 ## Result
+ NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y is verified
